@@ -1,6 +1,6 @@
 [build]
   base = "proyecto-appsweb1"
-  publish = "proyecto-appsweb1/dist"
+  publish = "dist"
   command = "npm run build"
 
 [build.environment]
