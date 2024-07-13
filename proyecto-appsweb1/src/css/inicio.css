@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('../assets/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: #99ac51;
+  box-shadow: 0 0px 8px rgb(0, 0, 0);
+  position: relative;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.welcome-message {
+  font-size: 18px;
+  color: #fff;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons button {
+  padding: 15px 25px;
+  margin-left: 20px; /* Aumenta este valor si es necesario */
+  background-color: #4cac4c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.486);
+}
+
+.auth-buttons button:hover {
+  background-color: #1b7721;
+  border-color: #cccccc;
+}
+
+.auth-buttons .register-link {
+  margin-right: 20px; /* Aumenta este valor para más separación */
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-buttons .register-link:hover {
+  text-decoration: underline;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background: transparent; /* Fondo transparente */
+  padding: 10px 0;
+}
+
+.menu button {
+  background-color: #4cac4c;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.486);
+}
+
+.menu button:hover {
+  background-color: #1b7721;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  text-align: center;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+  text-align: left;
+}
+
+.info-box h3 {
+  color: #377a37;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #333;
+  color: white;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #2b5fb6; /* Color azul para los enlaces */
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #254f99;
+  text-decoration: underline;
+}
+
+.footer-section a img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Estilos específicos para los enlaces de redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 1px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-links a:hover img {
+  opacity: 0.7;
+}
+
+/* Additional styles from IndexMainComponent.vue */
+.auth-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.calendar-button {
+  position: relative;
+}
+
+.notification-count {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+}
