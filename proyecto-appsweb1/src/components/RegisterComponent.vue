@@ -9,11 +9,11 @@
       <form id="studentForm" @submit.prevent="handleSubmit">
         <div class="form-group">
           <label for="nombre">Nombres<span class="required">*</span>:</label>
-          <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" v-model="nombre" @input="markFormAsModified">
+          <input type="text" id="nombre" name="nombre" maxlength="30" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" v-model="nombre" @input="markFormAsModified">
         </div>
         <div class="form-group">
           <label for="apellido">Apellidos<span class="required">*</span>:</label>
-          <input type="text" id="apellido" name="apellido" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" v-model="apellido" @input="markFormAsModified">
+          <input type="text" id="apellido" name="apellido" maxlength="30" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" v-model="apellido" @input="markFormAsModified">
         </div>
         <div class="form-group">
           <label for="nacimiento">Fecha de nacimiento<span class="required">*</span>:</label>
