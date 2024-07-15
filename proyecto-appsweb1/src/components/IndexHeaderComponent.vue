@@ -62,5 +62,4 @@ export default {
 
 <style scoped>
 @import '../css/inicio.css';
-
 </style>

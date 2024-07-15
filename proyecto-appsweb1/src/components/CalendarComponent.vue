@@ -101,14 +101,12 @@ export default {
       const eventDataCopy = { ...this.eventData };
 
       if (this.selectedEvent) {
-        // Edit existing event
         this.selectedEvent.setProp('title', eventDataCopy.title);
         this.selectedEvent.setStart(new Date(eventDataCopy.start));
         this.selectedEvent.setEnd(eventDataCopy.end ? new Date(eventDataCopy.end) : null);
         this.selectedEvent.setProp('backgroundColor', eventDataCopy.color);
         this.updateStoredEvents();
       } else {
-        // Add new event
         eventApi.addEvent({
           title: eventDataCopy.title,
           start: new Date(eventDataCopy.start),
@@ -167,6 +165,4 @@ export default {
 
 <style scoped>
 @import '../css/calendario.css';
-
-/* Additional styles here */
 </style>
